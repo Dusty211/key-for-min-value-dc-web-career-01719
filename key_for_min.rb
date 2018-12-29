@@ -7,7 +7,9 @@ testhash = {:chair => 25, :table => 85, :mattress => 450}
 def key_for_min_value(name_hash)
   return nil if name_hash == {}
   value_array = name_hash.collect {|name, value| value}
-  for i in 
+  for i in (0..value_array.length) do
+    
+  end
   
 end
 
