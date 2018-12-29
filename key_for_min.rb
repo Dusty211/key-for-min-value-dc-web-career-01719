@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
   returned_key = ""
   value_array = name_hash.collect {|name, value| value}
   name_hash.each_with_index do |(name, value), index|
-    key = name if 
+    returned_key = name if name_hash.all? {|name, value| value_array[i] <= value}
   end
   value_array = name_hash.collect {|name, value| value}
   for i in (0..value_array.length - 1) do
