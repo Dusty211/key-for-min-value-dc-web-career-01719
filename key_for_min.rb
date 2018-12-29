@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
   value_array = name_hash.collect {|name, value| value}
   for i in (0..value_array.length - 1) do
     puts name_hash.all? {|name, value| value <= value_array[i]}
-    puts array[i]
+    puts value_array[i]
   end
   
 end
