@@ -9,7 +9,11 @@ def key_for_min_value(name_hash)
   name_hash.each do |name, value|
     name_hash.any? do |name, value|
       value_array = name_hash.collect {|name, value| value}
-      
+      x = 0
+      while x < value_array.length
+        
+        x += 1
+      end
     end
   end
   #value_array = name_hash.collect {|name, value| value}
