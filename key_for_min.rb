@@ -6,9 +6,10 @@ testhash = {:chair => 25, :table => 85, :mattress => 450}
 
 def key_for_min_value(name_hash)
   return nil if name_hash == {}
-  key = ""
-  name_hash.each_with_index do |(key, value), index|
-    
+  returned_key = ""
+  value_array = name_hash.collect {|name, value| value}
+  name_hash.each_with_index do |(name, value), index|
+    key = name if 
   end
   value_array = name_hash.collect {|name, value| value}
   for i in (0..value_array.length - 1) do
